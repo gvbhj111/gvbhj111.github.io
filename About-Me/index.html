@@ -46,9 +46,7 @@
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/xaoxuu/favicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/xaoxuu/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/xaoxuu/favicon/favicon-16x16.png"><link rel="manifest" href="/assets/xaoxuu/favicon/site.webmanifest"><link rel="shortcut icon" href="/assets/xaoxuu/favicon/favicon.ico"><meta name="theme-color" content="#f8f8f8"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" media="all" />
-<!-- hexo injector head_end start -->
-<link rel="stylesheet" href="/custom_css_source.css">
-<!-- hexo injector head_end end --></head>
+</head>
 <body>
 
 <div class="l_body s:aa content tech" id="start" layout="page" ><aside class="l_left"><div class="leftbar-container">
@@ -576,7 +574,6 @@
     }
   });
 </script>
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -614,4 +611,19 @@ MathJax.Hub.Queue(function() {
 
 <!-- inject -->
 
-</div></body></html>
+</div><script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\(","\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body></html>
